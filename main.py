@@ -1,49 +1,21 @@
-# class person():
-#     def __init__(self,name,idnum):
-#         self.name = name
-#         self.idnum = idnum
-#     def display(self):
-#         print(self.name)
-#         print(self.idnum)
-
-# class Employee(person):
-#     def __init__(self, name, idnum, salary, post):
-#         self.salary = salary
-#         self.post = post
-#         person.__init__(self,name,idnum)
-
-    
-#     def details(self):
-#         print(self.salary)
-#         print(self.post)
-    
-       
-
-# a = Employee("Ashutosh",28,300000,"CEO")
-
-# a.display()
-# a.details()   
-
-
-#activity 2
-
+  
 from abc import ABC,abstractclassmethod
 
-class plant(ABC):
+class Coding(ABC):
 
     def move(self):
         pass
 
-class Human(plant):
+class Game(Coding):
     def move(self):
-          print("I can talk")
+          print("Coding is my most important organ")
 
-h = Human()
+h = Coding()
 h.move()
 
-class Dog(plant):
+class Project(Coding):
     def move(self):
-          print("I can bark")
+          print("I am made with the help of python language")
 
-d = Dog()
+d = Project()
 d.move()
